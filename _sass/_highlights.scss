@@ -9,6 +9,7 @@ code.highlighter-rouge {
   font-size: 85%;
   color: $oc-orange-9;
   background-color: $oc-gray-1;
+  border: 1px solid $oc-gray-2;
   padding: .1em .2em;
   border-radius: 3px;
 }
@@ -16,7 +17,8 @@ code.highlighter-rouge {
 pre.highlight {
   font-size: $code-font-size;
   padding: .85em .85em .85em 1.025em;
-  border: 1px solid $oc-gray-1;
+  border: 1px solid $oc-gray-2;
+  background-color: $oc-gray-1;
   // border-radius: 3px;
   color: $oc-gray-8;
   margin: 1em 0;

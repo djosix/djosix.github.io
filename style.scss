@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-  font-weight: 400;
+  font-weight: medium;
 }
 
 h1 {
@@ -180,8 +180,8 @@ ol, ul {
 }
 
 ul {
+  list-style-type: disc;
   > li:before {
-    content: "\2022";
     padding-right: $ul-bullets-right-space;
     font-family: $ul-bullets-font;
     font-size: $ul-bullets-font-size;
@@ -190,11 +190,9 @@ ul {
 }
 
 ol {
-  counter-reset: section;
-
+  list-style-type: decimal;
   > li:before {
     counter-increment: section;
-    content: counter(section) ".";
     padding-right: $ol-bullets-right-space;
     font-family: $ol-bullets-font;
     font-size: $ol-bullets-font-size;
@@ -270,7 +268,7 @@ tbody tr:nth-child(odd) th {
 
 // Blockquote
 blockquote {
-  font-weight: 300;
+  font-weight: $base-font-weight;
   padding: 0 0 0 1.4rem;
   margin: 0 2rem 1rem 0;
   border-left: .2em solid $blockquote-border-color;
@@ -493,7 +491,8 @@ nav {
 
       > a {
         margin: 3px 3px 3px 0;
-        padding: .5px 4px;
+        padding: 2px 4px;
+        border: 1px solid $oc-gray-3;
         color: $tag-index-label-color;
         background-color: $tag-index-label-background-color;
         border-radius: 3px;

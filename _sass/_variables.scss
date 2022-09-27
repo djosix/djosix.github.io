@@ -20,20 +20,20 @@ $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Fonts
-$base-font: 'Noto Sans TC', 'Open Sans', 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', 'Verdana', 'Arial', 'Dotum', sans-serif;
+$base-font: sans-serif;
 $code-font: Menlo, monospace;
 
 // Font sizes
-$base-font-size: 17px;
-$small-font-size: 16px;
-$code-font-size: 14px;
+$base-font-size: 15px;
+$small-font-size: 13px;
+$code-font-size: 13px;
 $h1-font-size: 30px;
 $h2-font-size: 27px;
 $h3-font-size: 24px;
 $h4-font-size: 21px;
 $h5-font-size: 18px;
 
-$base-font-weight: 360;
+$base-font-weight: normal;
 
 // Colors
 $base-color: $oc-gray-9;
@@ -66,19 +66,19 @@ $footer-border-color: $oc-gray-2;
 $footer-background-color: $oc-gray-1;
 
 // List
-$li-bottom-space: 0.4em;
+$li-bottom-space: 0.3em;
 $li-bullets-width: 1.4em;
-$li-line-height: 1.55;
+$li-line-height: 1.4em;
 
 $ul-bullets-font: sans-serif;
-$ul-bullets-font-size: 1.4em;
-$ul-bullets-font-line-height: 1.2;
-$ul-bullets-right-space: .3em;
+$ul-bullets-font-size: $base-font-size;
+$ul-bullets-font-line-height: inherit;
+$ul-bullets-right-space: .5em;
 
 $ol-bullets-font: inherit;
-$ol-bullets-font-size: 1em;
+$ol-bullets-font-size: $base-font-size;
 $ol-bullets-font-line-height: inherit;
-$ol-bullets-right-space: .3em;
+$ol-bullets-right-space: .5em;
 
 $li-child-size-ratio: 0.95;
 
