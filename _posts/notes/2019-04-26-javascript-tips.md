@@ -347,3 +347,32 @@ console.log('this will appear between hello and kitty because main() awaits kitt
   class Child extends Test {}
   new Child('kitty').print(); // kitty
   ```
+
+
+### Others
+
+- Find Vue component from DevTools console
+  ```js
+  function findComponent(filter) {
+    function traverse(root) {
+        if (filter(root)) return root;
+        for (const child of (root.$children || [])) {
+            const result = traverse(child);
+            if (result) return result;
+        }
+    }
+    const root = document.querySelector('#app').__vue__;
+    return traverse(root);
+  }
+
+  findComponent(c => c.someUniqueMethod).someUniqueMethod();
+  findComponent(c => c.$options.name === 'SomeTable').selected = 0;
+  ```
+- Force opening popup windows in the same tab
+  ```js
+  [].forEach.call(document.querySelectorAll('a'), function (link) {
+    if (link.attributes.target) link.attributes.target.value = '_self';
+  });
+
+  window.open = function (url) { location.href = url; };
+  ```
