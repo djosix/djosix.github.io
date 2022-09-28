@@ -577,6 +577,10 @@ nav {
       background-color: $tag-index-label-background-color;
       border-radius: 3px;
 
+      &:hover > span:nth-child(1) {
+        text-decoration: underline;
+      }
+
       span {
         float: left;
         padding: .5px 5px;
