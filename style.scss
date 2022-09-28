@@ -58,7 +58,7 @@
 html {
   font-size: $base-font-size;
   font-weight: $base-font-weight;
-
+  height: 100%;
   min-height: 100%;
 }
 
@@ -67,6 +67,8 @@ body {
   color: $base-color;
   line-height: 1.6;
   min-height: 100% !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -601,10 +603,16 @@ nav {
 }
 
 // Footer
+
 .wrapper-footer {
+  margin-top: auto;
+}
+
+.footer-colored-area {
   margin-top: 50px;
+  width: 100%;
+  height: 100%;
   border-top: 1px solid $footer-border-color;
-  border-bottom: 1px solid $footer-border-color;
   background-color: $footer-background-color;
 }
 
