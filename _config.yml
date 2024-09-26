@@ -37,7 +37,7 @@ footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
   email: 'toregenerate__gmail__com'
-  facebook: db.sqlite3
+  facebook: sqldump.tgz
   flickr:
   github: djosix
   googleplus: # anything in your profile username that comes after plus.google.com/
